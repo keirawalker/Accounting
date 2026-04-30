@@ -1,20 +1,27 @@
-# Accounting
+**Accounting Project Overview**    
 Algorithm to build Cash Flow Statements
 
-**General Framework**
+**General Framework**  
+
+```text
 EDGAR 10-K
    ↓
 Income Statement ─┐
                   ├── Feature Engine → Model → Predicted Cash Flow
 Balance Sheet ────┘
 
-**Data**
-Edgar SEC 10K's from Accenture PLC 2015-2025
+EDGAR Cash Flow (label only, NOT input)
+                         ↓
+                 Evaluation layer only
+```
+
+**Data**  
+Edgar SEC 10K's from Accenture PLC 2015-2025  
 Only using Income Statement & Balance sheets
 
-**Features**
-Income Statement
+**Features**  
+Income Statement  
 Balance Sheet
 
-**Model**
+**Model**  
 Gradient Boosted Decision Trees (GBDT)
